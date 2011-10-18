@@ -27,9 +27,11 @@ use constant BASE_URL => 'http://covers.librarything.com/devkey';
 
     use WWW::LibraryThing::Covers;
 
-    my $lt_covers = WWW::LibraryThing::Covers->new(api_key => d231aa37c9b4f5d304a60a3d0ad1dad4,
-                                                   directory => 'images',
-                                                   size => 'large');
+    my %config = (api_key => 'd231aa37c9b4f5d304a60a3d0ad1dad4',
+                  directory => 'images',
+                  size => 'large');
+
+    my $lt_covers = WWW::LibraryThing::Covers->new(%config);
     
     $lt_covers->get('0977920151');
 
