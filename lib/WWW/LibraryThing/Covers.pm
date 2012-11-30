@@ -16,11 +16,11 @@ WWW::LibraryThing::Covers - Interface to LibraryThing book cover API
 
 =head1 VERSION
 
-Version 0.0001
+Version 0.0002
 
 =cut
 
-our $VERSION = '0.0001';
+our $VERSION = '0.0002';
 
 # defaults
 use constant BASE_URL => 'http://covers.librarything.com/devkey';
@@ -281,7 +281,7 @@ L<http://search.cpan.org/dist/WWW-LibraryThing-Covers/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2011 Stefan Hornburg (Racke).
+Copyright 2011,2012 Stefan Hornburg (Racke).
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
