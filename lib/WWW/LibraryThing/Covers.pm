@@ -8,6 +8,8 @@ use LWP::UserAgent;
 use Image::Size;
 use Time::HiRes qw/sleep time/;
 
+=encoding utf8
+
 =head1 NAME
 
 WWW::LibraryThing::Covers - Interface to LibraryThing book cover API
@@ -65,7 +67,7 @@ Possible values are large, medium and small.
 =item not_found
 
 Defines behaviour for cover images not available. LibraryThing returns
-a transparent 1×1 pixel GIF image. 
+a transparent 1×1 pixel GIF image.
 
 =item delay
 
