@@ -2,14 +2,16 @@ NAME
     WWW::LibraryThing::Covers - Interface to LibraryThing book cover API
 
 VERSION
-    Version 0.0001
+    Version 0.0002
 
 SYNOPSIS
         use WWW::LibraryThing::Covers;
 
-        my $lt_covers = WWW::LibraryThing::Covers->new(api_key => d231aa37c9b4f5d304a60a3d0ad1dad4,
-                                                       directory => 'images',
-                                                       size => 'large');
+        my %config = (api_key => 'd231aa37c9b4f5d304a60a3d0ad1dad4',
+                      directory => 'images',
+                      size => 'large');
+
+        my $lt_covers = WWW::LibraryThing::Covers->new(%config);
     
         $lt_covers->get('0977920151');
 
@@ -95,7 +97,7 @@ SUPPORT
 
 ACKNOWLEDGEMENTS
 LICENSE AND COPYRIGHT
-    Copyright 2011 Stefan Hornburg (Racke).
+    Copyright 2011,2012 Stefan Hornburg (Racke).
 
     This program is free software; you can redistribute it and/or modify it
     under the terms of either: the GNU General Public License as published
